@@ -2,10 +2,10 @@
   "name": "whatsapp-api",
   "version": "1.0.0",
   "description": "Whatsapp api by JexN Corporation",
-  "main": "app.js",
+  "main": "dist/app.js",
   "scripts": {
-    "start": "node app.js",
-    "start:dev": "nodemon app.js",
+    "start": "node dist/app.js",
+    "start:dev": "nodemon dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install && netlify deploy --prod"
   },
