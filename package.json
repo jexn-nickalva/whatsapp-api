@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "start:dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "netlify deploy --prod"
   },
   "keywords": [
     "whatsapp-api",
@@ -16,12 +17,15 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.20.0",
-    "express": "^4.17.1",
+    "express": "^4.21.0",
     "express-fileupload": "^1.2.0",
     "express-validator": "^6.9.2",
     "http": "0.0.1-security",
     "mime-types": "^2.1.32",
+    "netlify-cli": "^17.36.1",
+    "netlify-lambda": "^2.0.16",
     "qrcode": "^1.4.4",
+    "serverless-http": "^3.2.0",
     "socket.io": "2.3.0",
     "whatsapp-web.js": "^1.23.0"
   },
